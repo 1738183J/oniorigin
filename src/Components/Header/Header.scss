@@ -1,0 +1,14 @@
+@import '../../Styles/_style';
+
+.header-container{
+    @include _flex(column,center,center);
+    width:100%;
+    height:45em;
+
+    & p{
+      margin:2px;
+      font-family: 'JapaneseTourist';
+      font-size:36px;
+    }
+}
+

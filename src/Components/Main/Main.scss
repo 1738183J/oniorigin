@@ -1,0 +1,67 @@
+@import '../../Styles/_style';
+
+.main-container{
+    @include _flex(column,flex-start,space-around);
+    padding-top: 14em;
+    padding-bottom: 10em;
+    width:100%;
+}
+
+.main-title{
+  @include _flex(column,center,center);
+  padding-bottom: 7em;
+  & h2{
+    margin: 0;
+    font-family: 'OnsenJapanDemoRegular';
+    font-size: 48px;
+  }
+
+  & h3{
+    font-family: 'JapaneseTourist';
+    font-size: 32px;
+  }
+
+}
+
+
+
+.presentation{
+      @include _flex(row,center,space-around);
+& .text-presentation{
+      @include _flex(row,center,space-around);
+      width:60%;
+    
+      & .main-text{
+        font-family: 'Quicksand-Regular';
+        font-size: 18px;
+        line-height: 50px;
+        width:65%;
+        text-align: justify;
+      }
+    }
+    
+    & .main-images{
+      @include _flex(column,flex-start,center);
+
+      .oni{
+        padding-bottom: 2em;
+        width:12em;
+        height:12em;
+      }
+      
+      & .kanji{
+        width:7em;
+        height: 20em;
+      }
+      
+    
+    }
+
+}
+
+.oni2{
+  position: relative;
+  align-self: flex-end;
+  right:10em;
+  width:20em;
+}
