@@ -3,7 +3,6 @@ import Scroll from '../../Images/scroll.jpeg';
 import Oni from '../../Images/oni.png';
 import Oni2 from '../../Images/Oni2.png';
 import Kanji from '../../Images/kanji.png';
-import useWindowSize from 'react-use/lib/useWindowSize';
 import Confetti from 'react-confetti'
 
 
@@ -28,11 +27,11 @@ const Main = props => {
                        At this point it is said that the demon is defeated and returns to its true form, at 50 feet tall and with fifteen horns! The warriors take the body back to the village to show everyone that they killed the demon. In more recent times, as mentioned, there have been stories about kind demons, such as The Red Oni Who Cried. </p>
                 </div>
                 <div className='main-images'> 
-                    <img src={Oni} className="oni"/>
-                    <img src={Kanji} className="kanji"/>
+                    <img src={Oni} alt =" " className="oni"/>
+                    <img src={Kanji} alt =" " className="kanji"/>
                 </div> 
             </div>
-            <img src={Oni2} className="oni2"/>
+            <img src={Oni2} alt =" " className="oni2"/>
         </div>
 
     );
