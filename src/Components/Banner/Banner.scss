@@ -1,8 +1,10 @@
 @import '../../Styles/_style';
 
+@media (min-width: 320px){
+
 .clouds{
     position: absolute;
-    top:0;
+    top:-24em;
     left: 0;
     width: 100%;
     height: 100%;
@@ -13,14 +15,71 @@
         bottom:0;
         max-width: 100%;
         transform: translateX(30px) translateY(0px);
+        animation: animate 10s linear infinite;
     }
 
     @keyframes animate{
         0% {
-            transform: translate(-100%);
+            opacity: 0;
+            transform: scale(1);
+        }
+        25% {
+            opacity: 1;    
+        }
+        75% {
+            opacity: 1;    
         }
         100% {
-            transform: translate(100%);
+            opacity: 0;
+            transform: scale(3);
         }
     }
+}
+
+}
+
+@media (min-width: 922px){
+
+    .clouds{
+        position: absolute;
+        top:6em;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    
+        & img{
+            position: absolute;
+            bottom:0;
+            max-width: 100%;
+            transform: translateX(30px) translateY(0px);
+            animation: animate 10s linear infinite;
+        }
+
+        & .white{
+            position: absolute;
+            bottom:0;
+            background-color: #fff;
+            height: 8em;
+            width: 100%;
+        }
+    
+        @keyframes animate{
+            0% {
+                opacity: 0;
+                transform: scale(1);
+            }
+            25% {
+                opacity: 1;    
+            }
+            75% {
+                opacity: 1;    
+            }
+            100% {
+                opacity: 0;
+                transform: scale(3);
+            }
+        }
+    }
+    
 }

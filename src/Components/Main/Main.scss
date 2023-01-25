@@ -1,16 +1,18 @@
 @import '../../Styles/_style';
 
+@media (min-width: 320px){
+
 .main-container{
     @include _flex(column,flex-start,space-around);
-    padding-top: 14em;
-    padding-bottom: 10em;
+    padding-top: 7em;
+    padding-bottom: 9em;
     width:100%;
     line-height: 50px
 }
 
 .main-title{
   @include _flex(column,center,center);
-  padding-bottom: 7em;
+  padding-bottom: 2em;
   & h2{
     margin: 0;
     font-family: 'OnsenJapanDemoRegular';
@@ -24,10 +26,79 @@
 
 }
 
+.presentation{
+      @include _flex(column,center,space-around);
+& .text-presentation{
+      @include _flex(row,center,space-around);
+    
+      & .main-text{
+        font-family: 'Quicksand-Regular';
+        font-size: 18px;
+        line-height: 50px;
+        width:80%;
+        text-align: justify;
+      }
+    }
+    
+    & .main-images{
+      @include _flex(column,flex-start,center);
 
+      .oni{
+        padding-bottom: 2em;
+        width:12em;
+        height:12em;
+      }
+      
+      & .kanji{
+        width:7em;
+        height: 20em;
+      }
+  
+    }
+
+}
+
+.oni2{
+  position: relative;
+  align-self: flex-end;
+  right:10em;
+  width:20em;
+}
+
+}
+
+@media (min-width: 922px){
+
+  .main-container{
+    @include _flex(column,flex-start,space-around);
+    padding-top: 18em;
+    padding-bottom: 10em;
+    width:100%;
+    line-height: 50px
+}
+
+
+.main-title{
+  @include _flex(column,center,center);
+  padding-bottom: 7em;
+  z-index: 1;
+  & h2{
+    margin: 0;
+    font-family: 'OnsenJapanDemoRegular';
+    font-size: 48px;
+  }
+
+  & h3{
+    font-family: 'JapaneseTourist';
+    font-size: 32px;
+  }
+
+}
 
 .presentation{
+  z-index: 1;
       @include _flex(row,center,space-around);
+
 & .text-presentation{
       @include _flex(row,center,space-around);
       width:60%;
@@ -65,4 +136,6 @@
   align-self: flex-end;
   right:10em;
   width:20em;
+}
+
 }
