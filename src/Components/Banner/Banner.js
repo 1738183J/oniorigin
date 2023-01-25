@@ -13,7 +13,7 @@ const Banner = props => {
     return (
         <div className="clouds">
             <img src={Cloud1} id="--i" alt =" "/>
-            <img src={Cloud2} id="--i" alt =" "/>
+            <img src={Cloud2} alt =" "/>
             <img src={Cloud3} alt =" "/>
             <img src={Cloud4} alt =" "/>
             <img src={Cloud5} alt =" "/>
